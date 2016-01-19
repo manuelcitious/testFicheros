@@ -26,15 +26,15 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func crearFichero(sender: AnyObject) {
-        //let path = dir.stringByAppendingPathComponent(fileName)
         let path = tmpDir.stringByAppendingPathComponent(fileName)
         //writing
         do {
             try completeText.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
             print("Archivo creado")
         }
-        catch {
+        catch let error as NSError{
             print("Error al crear el archivo")
+            print(error.localizedDescription)
         }
     }
     
@@ -45,8 +45,9 @@ class ViewController: UIViewController {
             let text2 = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
             print(text2)
         }
-        catch {
+        catch let error as NSError{
             print("Error al leer el archivo")
+            print(error.localizedDescription);
         }
     }
 
@@ -56,8 +57,9 @@ class ViewController: UIViewController {
             for file in filesInDirecotry{
                 print(file)
             }
-        }catch{
+        }catch let error as NSError{
             print("Error al obtener el listado de archivos")
+            print(error.localizedDescription);
         }
     }
     @IBAction func comprimirFicheros(sender: AnyObject) {
