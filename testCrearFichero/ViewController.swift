@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SSZipArchive
 
 class ViewController: UIViewController {
     let cabeceraTxt = "# Track file\n# (milliseconds since start) (track type) (track rect x0 y0 x1 y1)"
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
     var completeText = ""
     var fileManager = NSFileManager()
     var tmpDir: NSString = NSTemporaryDirectory()
-    let fileName = "tracking.txt"
+    let fileName = "tracking2.txt"
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -58,6 +59,10 @@ class ViewController: UIViewController {
         }catch{
             print("Error al obtener el listado de archivos")
         }
+    }
+    @IBAction func comprimirFicheros(sender: AnyObject) {
+        let zipPath = tmpDir.stringByAppendingPathComponent("archivo.zip")
+        SSZipArchive.createZipFileAtPath(zipPath, withContentsOfDirectory: tmpDir as String)
     }
 }
 

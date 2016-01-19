@@ -1,0 +1,6 @@
+framework module Pods_testCrearFichero {
+  umbrella header "Pods-testCrearFichero-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -38,6 +38,13 @@
                                     <action selector="listadoFicheros:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgn-Bl-xuN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR9-5k-UCU">
+                                <rect key="frame" x="264" y="399" width="72" height="30"/>
+                                <state key="normal" title="Comprimir"/>
+                                <connections>
+                                    <action selector="comprimirFicheros:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guh-TR-BsF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -46,6 +53,8 @@
                             <constraint firstItem="zyY-jn-v1x" firstAttribute="top" secondItem="Y14-kx-kme" secondAttribute="bottom" constant="8" id="NKD-Zh-gmY"/>
                             <constraint firstItem="Y14-kx-kme" firstAttribute="top" secondItem="VKy-hX-DX2" secondAttribute="bottom" constant="8" id="Tph-TN-NnY"/>
                             <constraint firstItem="VKy-hX-DX2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XS1-di-ccE"/>
+                            <constraint firstItem="qR9-5k-UCU" firstAttribute="top" secondItem="zyY-jn-v1x" secondAttribute="bottom" constant="8" id="mFM-uC-RbQ"/>
+                            <constraint firstItem="qR9-5k-UCU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFE-KU-pUn"/>
                             <constraint firstItem="zyY-jn-v1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z94-aa-Lmd"/>
                         </constraints>
                     </view>
