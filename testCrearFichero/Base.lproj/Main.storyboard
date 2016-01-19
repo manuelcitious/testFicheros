@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testCrearFichero" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKy-hX-DX2">
+                                <rect key="frame" x="255" y="285" width="90" height="30"/>
+                                <state key="normal" title="Crear fichero"/>
+                                <connections>
+                                    <action selector="crearFichero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8g-vj-hdV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y14-kx-kme">
+                                <rect key="frame" x="258" y="323" width="85" height="30"/>
+                                <state key="normal" title="Leer Fichero"/>
+                                <connections>
+                                    <action selector="leerFichero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4b-AV-ZWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyY-jn-v1x">
+                                <rect key="frame" x="252" y="361" width="96" height="30"/>
+                                <state key="normal" title="Lista Ficheros"/>
+                                <connections>
+                                    <action selector="listadoFicheros:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgn-Bl-xuN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VKy-hX-DX2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67G-Ro-EpT"/>
+                            <constraint firstItem="Y14-kx-kme" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ibc-3A-HPw"/>
+                            <constraint firstItem="zyY-jn-v1x" firstAttribute="top" secondItem="Y14-kx-kme" secondAttribute="bottom" constant="8" id="NKD-Zh-gmY"/>
+                            <constraint firstItem="Y14-kx-kme" firstAttribute="top" secondItem="VKy-hX-DX2" secondAttribute="bottom" constant="8" id="Tph-TN-NnY"/>
+                            <constraint firstItem="VKy-hX-DX2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XS1-di-ccE"/>
+                            <constraint firstItem="zyY-jn-v1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z94-aa-Lmd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
