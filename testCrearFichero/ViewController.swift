@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func comprimirFicheros(sender: AnyObject) {
-        let zipPath = tmpDir.stringByAppendingPathComponent("archivo.zip")
+        let zipPath = tmpDir.stringByAppendingPathComponent("archivo2.zip")
         SSZipArchive.createZipFileAtPath(zipPath, withContentsOfDirectory: tmpDir as String)
     }
 }
